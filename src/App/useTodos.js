@@ -4,6 +4,7 @@ import { useLocalStorage } from './useLocalStorage';
 function useTodos() {
   const {
     item: todos,
+      sincronizeItem: sincronizeTodos,
     saveItem: saveTodos,
     loading,
     error,
@@ -62,6 +63,7 @@ function useTodos() {
       deleteTodo,
       openModal,
       setOpenModal,
+      sincronizeTodos,
     }
 }
 
